@@ -16,18 +16,11 @@ import com.williamy.dubbo.IHelloDubboService;
 @SpringBootApplication
 public class App {
 
-	@Autowired
-	DubboServiceHandler testService;
 	
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
 		return "Hello dubbo provider!";
-	}
-	@RequestMapping("/hello")
-	@ResponseBody
-	String testDubboDemo() {
-		return "Hello dubbo consumer a!"+testService.helloservice.sayHello();
 	}
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(App.class, args);

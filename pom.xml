@@ -54,5 +54,11 @@
     		<artifactId>zkclient</artifactId>
     		<version>0.1</version>
 		</dependency>
+		<!-- 监控 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- 监控end -->
 	</dependencies>
 </project>
